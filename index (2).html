@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bringing high-quality financial literacy to Canadians and empowering smarter money decisions." />
+  <title>Canadian Financial Network</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #222;
+    }
+    header {
+      background-color: #ba1f2f;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+    }
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      color: white;
+      font-size: 22px;
+      margin-left: 15px;
+    }
+    nav {
+      background-color: #d83a3a;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 12px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      margin: 4px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background-color: #9c1e1e;
+    }
+    .hero {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1607082349250-65341aa40aa1?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.5);
+      z-index: 0;
+    }
+    .hero h2, .hero button {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: black;
+    }
+    .hero button {
+      padding: 12px 24px;
+      background-color: white;
+      border: none;
+      color: #ba1f2f;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background-color: #f0f0f0;
+    }
+    .mission {
+      background-color: #ba1f2f;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .mission h3 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .mission p {
+      font-size: 17px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .article {
+      background: white;
+      border-left: 6px solid #ba1f2f;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .article h4 {
+      color: #ba1f2f;
+      margin-bottom: 10px;
+    }
+    .footer {
+      background-color: #ba1f2f;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="CFN Logo" />
+    <h1>Canadian Financial Network</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Investing</a>
+    <a href="#">Accounting</a>
+    <a href="#">Economics</a>
+    <a href="#">Weekly Market Update</a>
+    <a href="#">Feedback/Requests</a>
+    <a href="#">Support</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Chart Your Financial Future Today</h2>
+    <button>Begin Your Journey</button>
+  </div>
+
+  <section class="mission">
+    <h3>Our Mission</h3>
+    <p>
+      At Canadian Financial Network, we believe financial literacy is not just a skill — it's a necessity. Yet, many Canadians leave the education system without understanding the basics of budgeting, investing, credit, or retirement planning. Our mission is to fill that void. We simplify complex financial topics, offer guidance tailored to Canadian systems like RRSPs and TFSAs, and empower individuals to make informed decisions. Whether you're a student, professional, entrepreneur, or retiree — we’re here to make financial education accessible, understandable, and actionable for all.
+    </p>
+  </section>
+
+  <div class="container">
+    <div class="article">
+      <h4>Latest Market Insights</h4>
+      <p>Stay up to date with the TSX, major Canadian equities, and market-moving news.</p>
+    </div>
+    <div class="article">
+      <h4>How to Start Investing in Canada</h4>
+      <p>Learn about TFSAs, RRSPs, ETFs, and more. Your guide to smart investing in 2025.</p>
+    </div>
+    <div class="article">
+      <h4>Understanding Inflation and Interest Rates</h4>
+      <p>Explore the Bank of Canada's latest policy decisions and how they affect your wallet.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Canadian Financial Network. All rights reserved.</p>
+  </div>
+</body>
+</html>
